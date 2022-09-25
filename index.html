@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+    <title>My website portofolio</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">C | T</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Claudia Cristina <br> Tomus</span>
+                </h1>
+
+                <!----<a href="#" class="button">Contact</a>--->
+                <a href="CV.html" class="button_about" onclick="PDF();">View my CV</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/claudia-cristina-tomus-729075181" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/ClaudiaCristinaTomus" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="img/clau.jpg" alt="" class="home__img">
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Professional Skills</h2>
+                   <br>
+                   <br>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-paint skills__icon'></i>
+                            <span class="skills__name">UX/UI</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div>
+                    <img src="img/skills.jpg" alt="" class="skills__img">
+                </div>
+            </section>
+
+
+
+        <!-------============Carousel================================-->
+
+       
+
+
+
+        <section class="work section" id="work">
+            <h2 class="section-title">My Work</h2>
+            <br>
+ 
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/personal_blog.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Personal Blog</h2>
+                                <p class="description">I built an example of a personal blog using HTML / CSS .</p>
+
+                                <a class="button_carrousel" href="https://claudiacristinatomus.github.io/personal_blog/"> Demo</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/dogs.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Dog Website</h2>
+                                <p class="description">I built a website presentation of a dog breed using HTML / CSS
+                                </p>
+
+                                <a class="button_carrousel" href="https://claudiacristinatomus.github.io/dog_website/"> Demo </a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/layout_shop.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Layout Shop</h2>
+                                <p class="description">I built a responsive layout shop using HTML / CSS languages.
+                                    
+                                </p>
+
+                                <a class="button_carrousel" href="https://claudiacristinatomus.github.io/layout_shop/"> Demo</a>
+                            </div>
+                        </div>
+
+
+
+                       <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/login.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                         <div class="card-content">
+                                <h2 class="name">LogIn Form</h2>
+                                <p class="description">LogIn and Register Form  using HTML / CSS / JavaScript </p>
+
+                                <a class="button_carrousel" href="https://claudiacristinatomus.github.io/logIn_form/"> Demo</a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/BMI_Calculator.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">BMI Calculator</h2>
+                                <p class="description">BMI Calculator (calculate Body mass index) using JavaScript/HTML/CSS </p>
+
+                                <a class="button_carrousel" href="https://claudiacristinatomus.github.io/BMI_Calculator/"> Demo</a>
+                            </div>
+                        </div>
+
+
+
+
+                       <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/the_player.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">The player</h2>
+                                <p class="description">I built the game the player using Javascript language.</p>
+
+                                <a class="button_carrousel" href="https://claudiacristinatomus.github.io/the_player/"> Demo</a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/digital_timer.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Digital Timer</h2>
+                                <p class="description">I created a digital timer that has the start button stop pause
+                                    reset time : Javascript</p>
+
+                                <a class="button_carrousel" href="https://claudiacristinatomus.github.io/digital_timer/"> Demo</a>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/spaceship_game.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Spaceship Game</h2>
+                                <p class="description">I built the game : the spaceship using Javascript language.</p>
+
+                                <a class="button_carrousel" href="https://claudiacristinatomus.github.io/spaceship_game/"> Demo</a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/hangman.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">The Hangmann</h2>
+                                <p class="description">The Hangmann:check if the letter entered is part of the word in Javascript</p>
+
+                                <a class="button_carrousel" href="https://claudiacristinatomus.github.io/the_hangman/">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" id="fullName" placeholder="Name" class="contact__input">
+                    <input type="mail" id="email_id" placeholder="Email" class="contact__input">
+                    <textarea name="" id="message" placeholder="Write your message" cols="6" rows="10"
+                        class="contact__input"></textarea>
+                    <input type="button" onclick="SendMail()" value="Submit" class="contact__button button">
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Claudia Cristina</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/claudia-cristina-tomus-729075181" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/ClaudiaCristinaTomus" class="footer__icon"><i class='bx bxl-github'></i></a>
+        </div>
+        <p class="footer__copy">Claudia Cristina Tomus</p>
+    </footer>
+
+    <!-----------Carousel-------------------->
+    <script src="swiper-bundle.min.js"></script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
